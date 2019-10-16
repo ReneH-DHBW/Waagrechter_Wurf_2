@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-//edit Texte oben deklarieren und Buttons in onCreate
+//edit Texte oben deklarieren und Buttons in onCreate Kennste Ja
     protected EditText eingegebene_hoehe = null;
     protected EditText eingegebene_beschleunigung = null;
     protected Button weite_wird_berechnet;
