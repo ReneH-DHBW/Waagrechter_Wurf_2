@@ -8,9 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -40,42 +38,45 @@ public class Activity2_Anzeige extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity2__anzeige);
-
+//dao initialisieren
         dao = WertRoomDatabase.getDatabase(this).wertDao();
-
+//Werte der TextViews in Variablen übergeben
         textViewHoehe = findViewById(R.id.hoehe_anzeigen);
         textViewV = findViewById(R.id.v_anzeigen);
         textViewErgebnis = findViewById(R.id.ergebnis_anzeigen);
-
+//Button um zur Hilfe-Seite zu kommen
         zur_hilfe_seite = findViewById(R.id.zur_hilfe_seite);
         zur_hilfe_seite.setOnClickListener(view ->{
             Intent intent = new Intent(this, Activity3_Hilfe.class);
             startActivity(intent);
                 });
+//Button um die Werte zu speichern
         speichern = findViewById(R.id.speichern);
         speichern.setOnClickListener((view)->{saveWertOnClick();
                 });
+//Button um zur Tabelle zu kommen
         weiter_zur_tabelle = findViewById(R.id.weiter_zur_Tabelle);
         weiter_zur_tabelle.setOnClickListener((view)->{
             Intent intent = new Intent(this, Activity4_Tabelle.class);
             startActivity(intent);
         });
 
-//Darstellung der Zahlen auf die TextViews aus dem erstellen Intent von der vorherigen Seite
+//Darstellung der Zahlen auf die TextViews aus dem erstellten Intent von der vorherigen Seite
         Intent intent = getIntent();
+//Schreiben der Hoehe in Variable und String
         wertHoeheVA1 = intent.getDoubleExtra("wert_hoehe", 0);
         wertHoeheVA1_String = String.valueOf(wertHoeheVA1);
         textViewHoehe.setText(wertHoeheVA1_String);
-
+//Schreiben der Beschleunigung in Variable und String
         wertVVA1 = intent.getDoubleExtra("wert_v", 0);
         wertVVA1_String = String.valueOf(wertVVA1);
         textViewV.setText(wertVVA1_String);
-// Berechnung und Darstellung der Werte
+//Schreiben der Weite in Variable und String
         weite = Math.round((wertVVA1 * Math.sqrt((2 * wertHoeheVA1) / gravitation))*100.0) / 100.0;
         weiteString = String.valueOf(weite);
         textViewErgebnis.setText(weiteString);
-
-       // zumSpeichern = "Hoehe: "+ wertVVA1_String
+// Alle Werte in einen String schreiben
+        zumSpeichern = "Höhe: "+ wertHoeheVA1_String+"m" + " Beschl. : "+wertVVA1_String+"m/s "+" = Weite : "+weiteString;
 
     }
 
@@ -90,13 +91,14 @@ public class Activity2_Anzeige extends Activity {
             super.onPostExecute(aVoid);
         }
     }
+//Methode zum speichern der Werte, welche zuletzt auf der Main eingegeben wurden (als EIN String)
     private void saveWertOnClick(){
-        EditText wert = findViewById(R.id.eingegebene_hoehe_test);
-        if (!wert.getText().toString().isEmpty()){
-            new SpeichernTask().execute(new Wert(wert.getText().toString()));
+        if (!zumSpeichern.isEmpty()){
+            new SpeichernTask().execute(new Wert(zumSpeichern));
         }
+        //Toast erstellen um dem Nutzer ein Feedback für den Speichern Button zu geben.
         Context context = getApplicationContext();
-        Toast toast = Toast.makeText(context, wert.getText().toString(), Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(context, "Erfolgreich gespeichert!", Toast.LENGTH_LONG);
         toast.show();
     }
 }

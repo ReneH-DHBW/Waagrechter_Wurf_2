@@ -86,20 +86,6 @@
         android:layout_marginEnd="100dp"
         android:background="#00BCD4"
         android:textSize="30sp" />
-    <EditText
-        android:id="@+id/eingegebene_hoehe_test"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="100dp"
-        android:autofillHints="0"
-        android:ems="10"
-        android:hint="@string/EditText_hohe_eingeben"
-        android:textAlignment="center"
-        android:inputType="text" />
+
 
 </RelativeLayout>

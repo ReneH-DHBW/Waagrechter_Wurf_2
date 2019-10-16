@@ -15,6 +15,7 @@ public class Activity4_Tabelle extends AppCompatActivity {
     private RecyclerView recyclerView;
     private WertListAdapter adapter;
 
+//Die Liste laden
     class LadeWertTask extends AsyncTask<Void, Void, List<Wert>>{
         @Override
         protected List<Wert> doInBackground(Void... voids){
