@@ -34,6 +34,7 @@ public class Activity2_Anzeige extends Activity {
     String wertHoeheVA1_String;
     String wertVVA1_String;
     String weiteString;
+    String zumSpeichern;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +74,8 @@ public class Activity2_Anzeige extends Activity {
         weite = Math.round((wertVVA1 * Math.sqrt((2 * wertHoeheVA1) / gravitation))*100.0) / 100.0;
         weiteString = String.valueOf(weite);
         textViewErgebnis.setText(weiteString);
+
+       // zumSpeichern = "Hoehe: "+ wertVVA1_String
 
     }
 
