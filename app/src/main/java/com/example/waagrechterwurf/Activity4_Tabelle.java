@@ -40,6 +40,7 @@ public class Activity4_Tabelle extends AppCompatActivity {
 
         dao = WertRoomDatabase.getDatabase(this).wertDao();
     }
+
     @Override
     protected void onResume(){
         super.onResume();

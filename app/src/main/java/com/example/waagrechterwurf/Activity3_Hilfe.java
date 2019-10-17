@@ -20,6 +20,7 @@ public class Activity3_Hilfe extends AppCompatActivity implements View.OnClickLi
         Button zur_Tabelle = findViewById(R.id.zur_Tabelle);
         zur_Tabelle.setOnClickListener(this);
     }
+
 // Buttons zur Navigation
     @Override
     public void onClick(View view) {

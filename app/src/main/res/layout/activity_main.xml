@@ -14,9 +14,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="614dp"
-        android:layout_marginEnd="140dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="630dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/awesome_toast_hilfe_button"
         android:text="@string/Button_Hilfe"
         android:textColor="@color/colorBlack" />
@@ -27,11 +27,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/eingegebene_beschleunigung"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="131dp"
-        android:layout_marginTop="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/awesome_berechnen_button"
-        android:text="@string/Button_weite_wird_berechnet"
         android:enabled="false"
+        android:text="@string/Button_weite_wird_berechnet"
         android:textColor="@color/colorBlack" />
 
     <Button
@@ -57,7 +59,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="300dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="20dp"
         android:alpha="0.5"
         android:background="@drawable/awesome_toast_hilfe_button"
@@ -71,14 +73,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="100dp"
         android:autofillHints="0"
         android:ems="10"
         android:hint="@string/EditText_hohe_eingeben"
-        android:textAlignment="center"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
 
     <EditText
         android:id="@+id/eingegebene_beschleunigung"
@@ -87,13 +89,35 @@
         android:layout_below="@id/eingegebene_hoehe"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="100dp"
         android:autofillHints="0"
         android:ems="10"
         android:hint="@string/EdiText_eingegebene_Beschleunigung"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/willkommensSeite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/willkomensText"
         android:textAlignment="center"
-        android:inputType="numberDecimal" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/zurTabelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="630dp"
+        android:layout_marginEnd="250dp"
+        android:background="@drawable/awesome_toast_hilfe_button"
+        android:text="@string/Button_Zu_der_Tabelle" />
 
 </RelativeLayout>

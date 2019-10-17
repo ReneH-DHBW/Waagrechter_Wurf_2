@@ -1,9 +1,7 @@
 package com.example.waagrechterwurf;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
-import android.content.Context;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -11,18 +9,18 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
 //edit Texte oben deklarieren und Buttons in onCreate Kennste Ja
     protected EditText eingegebene_hoehe = null;
     protected EditText eingegebene_beschleunigung = null;
+
     protected Button weite_wird_berechnet;
     protected Button zur_hilfe_seite;
     protected Button hilfe_v;
     protected Button hilfe_h;
+    protected Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,32 +33,21 @@ public class MainActivity extends Activity implements View.OnClickListener {
         zur_hilfe_seite = findViewById(R.id.zur_hilfe_seite);
         zur_hilfe_seite.setOnClickListener(this);
 
+        hilfe_v = findViewById(R.id.hilfe_button_v);
+        hilfe_v.setOnClickListener(this);
+
+        hilfe_h = findViewById(R.id.hilfe_button_h);
+        hilfe_h.setOnClickListener(this);
+
+        button = findViewById(R.id.zurTabelle);
+        button.setOnClickListener(this);
+
         eingegebene_hoehe = findViewById(R.id.eingegebene_hoehe);
         eingegebene_hoehe.addTextChangedListener(berechnenWatcher);
         eingegebene_beschleunigung = findViewById(R.id.eingegebene_beschleunigung);
         eingegebene_beschleunigung.addTextChangedListener(berechnenWatcher);
-
-// Toast erstellen für Geschwindigkeit (Hilfe)
-        hilfe_v = findViewById(R.id.hilfe_button_v);
-        hilfe_v.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Context context = getApplicationContext();
-                Toast toast = Toast.makeText(context, getString(R.string.toast_hilfe_v), Toast.LENGTH_LONG);
-                toast.show();
-            }
-        });
-// Toast erstellen für Geschwindigkeit (Hilfe)
-        hilfe_h = findViewById(R.id.hilfe_button_h);
-        hilfe_h.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Context context = getApplicationContext();
-                Toast toast = Toast.makeText(context, getString(R.string.toast_hilfe_h), Toast.LENGTH_LONG);
-                toast.show();
-            }
-        });
     }
+
 //Für berechnen klick. Idee dahinter, je nachdem auf welchen Button ich drücke schaut der switch welchen Case er ausführen muss.
     @Override
     public void onClick(View view) {
@@ -81,6 +68,19 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 Intent intentHilfe = new Intent(this, Activity3_Hilfe.class);
                 startActivity(intentHilfe);
                 break;
+// Zur Tabelle
+            case R.id.zurTabelle:
+                Intent intentTabelle2 = new Intent(this, Activity4_Tabelle.class);
+                startActivity(intentTabelle2);
+                break;
+// Toast erstellen für Geschwindigkeit (Hilfe)
+            case R.id.hilfe_button_v:
+                eventHandlerFuerButtonV();
+                break;
+// Toast erstellen für Geschwindigkeit (Hilfe)
+            case R.id.hilfe_button_h:
+                eventHandlerFuerButtonH();
+                break;
         }
 
     }
@@ -99,4 +99,24 @@ public class MainActivity extends Activity implements View.OnClickListener {
         public void afterTextChanged(Editable editable) {
         }
     };
+
+// Für den Hilfe-Button Höhe
+    protected void eventHandlerFuerButtonV(){
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+        dialogBuilder.setMessage(R.string.hilfe_v);
+        dialogBuilder.setPositiveButton("Okay", null);
+
+        AlertDialog dialog = dialogBuilder.create();
+        dialog.show();
+    }
+
+// Für den Hilfe-Button Beschleunigung
+    protected void eventHandlerFuerButtonH(){
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+        dialogBuilder.setMessage(R.string.hilfe_h);
+        dialogBuilder.setPositiveButton("Okay", null);
+
+        AlertDialog dialog = dialogBuilder.create();
+        dialog.show();
+    }
 }
