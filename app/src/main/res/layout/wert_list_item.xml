@@ -4,12 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     >
-    <TextView
-        android:padding="4dp"
-        android:id="@+id/list_item_wert"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/list_item_wert"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
         android:layout_margin="4dp"
-        android:background="@color/colorButton" />
+        android:background="@drawable/awesome_toast_hilfe_button" />
+    <Button
+        android:id="@+id/löschen"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/awesome_toast_hilfe_button"
+        android:text="-"
+        android:textColor="@color/colorBlack"  />
+    </LinearLayout>
 
 </LinearLayout>

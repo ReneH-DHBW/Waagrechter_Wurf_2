@@ -28,6 +28,7 @@ public class Activity2_Anzeige extends Activity {
     double gravitation = 9.81;
     double wertHoeheVA1;
     double wertVVA1;
+    int idcounter= 0;
 
     String wertHoeheVA1_String;
     String wertVVA1_String;

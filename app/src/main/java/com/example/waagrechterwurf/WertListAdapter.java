@@ -1,5 +1,6 @@
 package com.example.waagrechterwurf;
 
+import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,10 +19,6 @@ public class WertListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         public WertViewHolder(@NonNull View itemView){
             super(itemView);
         }
-    }
-
-    WertListAdapter(){
-
     }
     @NonNull
     @Override
