@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,7 +28,6 @@ public class Activity2_Anzeige extends Activity {
     double gravitation = 9.81;
     double wertHoeheVA1;
     double wertVVA1;
-    int idcounter= 0;
 
     String wertHoeheVA1_String;
     String wertVVA1_String;
@@ -83,7 +81,7 @@ public class Activity2_Anzeige extends Activity {
         weiteString = String.valueOf(weite);
         textViewErgebnis.setText("Weite: "+weiteString+" m");
 
-       zumSpeichern = "Höhe: "+ wertHoeheVA1_String+"m" + " Beschl. : "+wertVVA1_String+"m/s "+" = Weite : "+weiteString;
+       zumSpeichern = "Höhe: "+ wertHoeheVA1_String+"m" + " Beschl. : "+wertVVA1_String+"m/s "+" = Weite : "+weiteString +" Kommentar: ";
 
     }
 
