@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,6 +22,7 @@ public class Activity2_Anzeige extends Activity {
     protected Button zur_hilfe_seite;
     protected Button speichern;
     protected Button weiter_zur_tabelle;
+    protected Button neue_rechnung;
 
     private WertDao dao;
 
@@ -56,13 +58,19 @@ public class Activity2_Anzeige extends Activity {
 
 //Button um die Werte zu speichern
         speichern = findViewById(R.id.speichern);
-        speichern.setOnClickListener((view)->{saveWertOnClick();
-                });
+        speichern.setOnClickListener((view)-> saveWertOnClick());
 
 //Button um zur Tabelle zu kommen
         weiter_zur_tabelle = findViewById(R.id.weiter_zur_Tabelle);
         weiter_zur_tabelle.setOnClickListener((view)->{
             Intent intent = new Intent(this, Activity4_Tabelle.class);
+            startActivity(intent);
+        });
+
+// Button für eine neue Rechnung
+        neue_rechnung = findViewById(R.id.n_rechnung);
+        neue_rechnung.setOnClickListener(view -> {
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         });
 

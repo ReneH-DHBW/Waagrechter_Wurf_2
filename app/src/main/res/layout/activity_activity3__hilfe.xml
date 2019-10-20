@@ -17,20 +17,6 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/hilfe_text"
-        android:layout_width="300dp"
-        android:layout_height="220dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/awesome_text_field"
-        android:text="@string/hilfe_seite_text"
-        android:textAlignment="center" />
-
     <Button
         android:id="@+id/zur_Startseite"
         android:layout_width="wrap_content"
@@ -56,5 +42,21 @@
         android:layout_marginEnd="250dp"
         android:background="@drawable/awesome_toast_hilfe_button"
         android:text="@string/Button_Zu_der_Tabelle" />
+
+    <TextView
+        android:id="@+id/hilfeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:freezesText="false"
+        android:text="@string/hilfe_seite_text"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:background="@drawable/awesome_text_field"/>
 
 </RelativeLayout>
