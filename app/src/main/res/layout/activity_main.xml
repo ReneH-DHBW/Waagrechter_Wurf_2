@@ -25,7 +25,7 @@
         android:id="@+id/weite_wird_berechnet"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/eingegebene_beschleunigung"
+        android:layout_below="@id/kommentar"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="250dp"
@@ -119,5 +119,21 @@
         android:layout_marginEnd="250dp"
         android:background="@drawable/awesome_toast_hilfe_button"
         android:text="@string/Button_Zu_der_Tabelle" />
+
+    <EditText
+        android:id="@+id/kommentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eingegebene_beschleunigung"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints="Kein Kommentar"
+        android:ems="10"
+        android:hint="@string/kommentar"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
 
 </RelativeLayout>

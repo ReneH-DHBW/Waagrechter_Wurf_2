@@ -10,11 +10,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class MainActivity extends Activity implements View.OnClickListener {
 
 //edit Texte oben deklarieren und Buttons in onCreate Kennste Ja
     protected EditText eingegebene_hoehe = null;
     protected EditText eingegebene_beschleunigung = null;
+    protected EditText comment = null;
 
     protected Button weite_wird_berechnet;
     protected Button zur_hilfe_seite;
@@ -46,6 +50,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         eingegebene_hoehe.addTextChangedListener(berechnenWatcher);
         eingegebene_beschleunigung = findViewById(R.id.eingegebene_beschleunigung);
         eingegebene_beschleunigung.addTextChangedListener(berechnenWatcher);
+        comment = findViewById(R.id.kommentar);
     }
 
 //Für berechnen klick. Idee dahinter, je nachdem auf welchen Button ich drücke schaut der switch welchen Case er ausführen muss.
@@ -61,6 +66,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
 // gebe die Geschwindigkeit weiter
                 Double wertV = Double.parseDouble(eingegebene_beschleunigung.getText().toString());
                 intent.putExtra("wert_v", wertV);
+// Kommentar
+                String wertComment = comment.getText().toString();
+                intent.putExtra("wert_k", wertComment);
+// Zeit
+                String date = getCurrentTimeStamp();
+                intent.putExtra("zeit", date);
                 startActivity(intent);
                 break;
 // Zur Hilfe Seite
@@ -118,5 +129,19 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         AlertDialog dialog = dialogBuilder.create();
         dialog.show();
+    }
+// Aktuelle Zeit finden
+    public static String getCurrentTimeStamp(){
+        try {
+
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            String currentDateTime = dateFormat.format(new Date());
+
+            return currentDateTime;
+        } catch (Exception e) {
+            e.printStackTrace();
+
+            return null;
+        }
     }
 }

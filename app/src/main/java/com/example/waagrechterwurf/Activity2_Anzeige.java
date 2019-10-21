@@ -10,6 +10,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,6 +36,8 @@ public class Activity2_Anzeige extends Activity {
     String wertVVA1_String;
     String weiteString;
     String zumSpeichern;
+    String zeit;
+    String kommentar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,7 +92,12 @@ public class Activity2_Anzeige extends Activity {
         weiteString = String.valueOf(weite);
         textViewErgebnis.setText("Weite: "+weiteString+" m");
 
-       zumSpeichern = "Höhe: "+ wertHoeheVA1_String+"m" + " Beschl. : "+wertVVA1_String+"m/s "+" = Weite : "+weiteString +" Kommentar: ";
+        zeit = intent.getStringExtra("zeit");
+
+        kommentar = intent.getStringExtra("wert_k");
+
+
+       zumSpeichern = "Höhe: "+ wertHoeheVA1_String+"m" + " Beschl. : "+wertVVA1_String+"m/s "+"\n Weite : "+weiteString +"\n Kommentar: "+kommentar+"\n Speicherzeit: "+zeit;
 
     }
 

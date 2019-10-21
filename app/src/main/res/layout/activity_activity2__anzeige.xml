@@ -74,27 +74,11 @@
         android:background="#00BCD4"
         android:textSize="30sp" />
 
-    <EditText
-        android:id="@+id/kommentar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ergebnis_anzeigen"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="20dp"
-        android:autofillHints="0"
-        android:ems="10"
-        android:hint="@string/kommentar"
-        android:inputType="textPersonName"
-        android:textAlignment="center" />
-
     <Button
         android:id="@+id/speichern"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/kommentar"
+        android:layout_below="@id/ergebnis_anzeigen"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="250dp"
