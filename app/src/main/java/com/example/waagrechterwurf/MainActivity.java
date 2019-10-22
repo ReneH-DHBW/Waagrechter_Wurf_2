@@ -73,6 +73,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 String date = getCurrentTimeStamp();
                 intent.putExtra("zeit", date);
                 startActivity(intent);
+
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
 // Zur Hilfe Seite
             case R.id.zur_hilfe_seite:

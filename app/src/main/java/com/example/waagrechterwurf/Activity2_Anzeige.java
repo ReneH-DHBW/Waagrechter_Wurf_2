@@ -68,6 +68,7 @@ public class Activity2_Anzeige extends Activity {
         weiter_zur_tabelle.setOnClickListener((view)->{
             Intent intent = new Intent(this, Activity4_Tabelle.class);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         });
 
 // Button für eine neue Rechnung
@@ -75,6 +76,7 @@ public class Activity2_Anzeige extends Activity {
         neue_rechnung.setOnClickListener(view -> {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
         });
 
 //Darstellung der Zahlen auf die TextViews aus dem erstellten Intent von der vorherigen Seite + schreiben der Werte in einen String
@@ -87,7 +89,6 @@ public class Activity2_Anzeige extends Activity {
         wertVVA1 = intent.getDoubleExtra("wert_v", 0);
         wertVVA1_String = String.valueOf(wertVVA1);
         textViewV.setText("Beschleunigung: "+wertVVA1_String+" m/s");
-
         weite = Math.round((wertVVA1 * Math.sqrt((2 * wertHoeheVA1) / gravitation))*100.0) / 100.0;
         weiteString = String.valueOf(weite);
         textViewErgebnis.setText("Weite: "+weiteString+" m");
@@ -111,6 +112,11 @@ public class Activity2_Anzeige extends Activity {
         protected void onPostExecute(Void aVoid){
             super.onPostExecute(aVoid);
         }
+    }
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
 //Methode zum speichern der Werte, welche zuletzt auf der Main eingegeben wurden (als EIN String)

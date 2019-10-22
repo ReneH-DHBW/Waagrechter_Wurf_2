@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/berge_bearbeitet">
+    android:background="@drawable/clipart_bilder_links">
 
     <Button
         android:id="@+id/zur_hilfe_seite"

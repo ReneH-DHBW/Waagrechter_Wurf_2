@@ -31,6 +31,11 @@ public class Activity4_Tabelle extends AppCompatActivity {
         adapter = new WertListAdapter(dao);
         recyclerView.setAdapter(adapter);
     }
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
 
     @Override
     protected void onResume(){
