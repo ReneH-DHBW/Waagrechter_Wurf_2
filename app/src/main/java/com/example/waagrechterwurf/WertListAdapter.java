@@ -1,11 +1,10 @@
 package com.example.waagrechterwurf;
 
 import android.os.AsyncTask;
-import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -34,10 +33,11 @@ public class WertListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position){
         TextView wordView = holder.itemView.findViewById(R.id.list_item_wert);
         wordView.setText(werts.get(position).getWert());
-// Für Delete
-        wordView.setOnClickListener((view) -> {
+
+        ImageView loeschen = holder.itemView.findViewById(R.id.loeschen);
+        loeschen.setOnClickListener((view -> {
             new DeleteWordTask(dao, this).execute(werts.get(position));
-        });
+        }));
     }
 
     @Override

@@ -134,10 +134,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public static String getCurrentTimeStamp(){
         try {
 
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-            String currentDateTime = dateFormat.format(new Date());
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyy HH:mm:ss");
+            String aktuelleZeit = dateFormat.format(new Date());
 
-            return currentDateTime;
+            return aktuelleZeit;
         } catch (Exception e) {
             e.printStackTrace();
 

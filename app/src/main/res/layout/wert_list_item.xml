@@ -13,7 +13,7 @@
             android:textAlignment="center" />
 
         <ImageView
-            android:id="@+id/löschen"
+            android:id="@+id/loeschen"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
