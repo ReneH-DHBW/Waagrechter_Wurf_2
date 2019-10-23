@@ -82,7 +82,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="250dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/awesome_toast_hilfe_button"
         android:text="@string/Buttom_Speichern" />
@@ -105,7 +105,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="-50dp"
         android:layout_marginEnd="250dp"
         android:background="@drawable/awesome_toast_hilfe_button"
         android:text="@string/n_rechung" />
