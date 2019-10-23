@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/links_background">
+    android:background="@drawable/links">
 
     <Button
         android:id="@+id/zur_hilfe_seite"
@@ -29,9 +29,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="135dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="135dp"
-        android:background="@drawable/awesome_berechnen_button"
+        android:background="@drawable/awesome_toast_hilfe_button"
         android:enabled="false"
         android:text="@string/Button_weite_wird_berechnet"
         android:textColor="@color/colorBlack" />
@@ -46,7 +46,7 @@
         android:layout_marginStart="300dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
-        android:alpha="0.5"
+        android:alpha="0.85"
         android:background="@drawable/awesome_toast_hilfe_button"
         android:text="@string/Button_Hilfe_V"
         android:textColor="@color/colorBlack" />
@@ -59,9 +59,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="300dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="125dp"
         android:layout_marginEnd="20dp"
-        android:alpha="0.5"
+        android:alpha="0.85"
         android:background="@drawable/awesome_toast_hilfe_button"
         android:text="@string/Button_Hilfe_H"
         android:textColor="@color/colorBlack" />
@@ -74,13 +74,14 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="125dp"
         android:layout_marginEnd="100dp"
         android:autofillHints="0"
         android:ems="10"
         android:hint="@string/EditText_hohe_eingeben"
         android:inputType="numberDecimal"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColorHint="@color/text_ueberschrift" />
 
     <EditText
         android:id="@+id/eingegebene_beschleunigung"
@@ -96,7 +97,8 @@
         android:ems="10"
         android:hint="@string/EdiText_eingegebene_Beschleunigung"
         android:inputType="numberDecimal"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColorHint="@color/text_ueberschrift" />
 
     <TextView
         android:id="@+id/willkommensSeite"
@@ -105,6 +107,8 @@
         android:layout_marginTop="50dp"
         android:text="@string/willkomensText"
         android:textAlignment="center"
+        android:textColor="@color/text_ueberschrift"
+        android:textColorHint="@color/colorBlack"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -134,6 +138,7 @@
         android:ems="10"
         android:hint="@string/kommentar"
         android:inputType="textPersonName"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColorHint="@color/text_ueberschrift" />
 
 </RelativeLayout>

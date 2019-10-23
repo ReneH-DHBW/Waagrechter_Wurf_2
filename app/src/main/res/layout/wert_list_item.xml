@@ -4,19 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     >
+
         <TextView
             android:id="@+id/list_item_wert"
             android:layout_width="315dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@drawable/awesome_toast_hilfe_button"
-            android:textAlignment="center" />
+            android:background="@drawable/awesome_text_field"
+            android:textAlignment="center"
+            android:textColor="@color/text_ueberschrift" />
 
         <ImageView
             android:id="@+id/loeschen"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginStart="0dp"
             android:layout_gravity="center"
-            android:background="@drawable/trash" />
+            android:layout_marginStart="0dp"
+            android:background="@drawable/trash"
+            android:contentDescription="@string/content" />
 </LinearLayout>

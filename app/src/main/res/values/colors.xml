@@ -7,4 +7,8 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
     <color name="colorBlue">#00BCD4</color>
+
+    <color name="black_red">#B3241B</color>
+    <color name="text_ueberschrift">#182024</color>
+    <color name="kaesten">#4DBFFF</color>
 </resources>

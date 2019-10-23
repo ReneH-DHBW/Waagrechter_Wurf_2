@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity2_Anzeige"
-    android:background="@drawable/mitte_background">
+    android:background="@drawable/mitte">
 
     <Button
         android:id="@+id/zur_hilfe_seite"
@@ -43,9 +43,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="125dp"
         android:layout_marginEnd="20dp"
-        android:background="#00BCD4"
+        android:background="@drawable/awesome_text_field"
+        android:textColor="@color/text_ueberschrift"
         android:textSize="30sp" />
 
     <TextView
@@ -58,7 +59,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="20dp"
-        android:background="#00BCD4"
+        android:background="@drawable/awesome_text_field"
+        android:textColor="@color/text_ueberschrift"
         android:textSize="30sp" />
 
     <TextView
@@ -71,7 +73,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="20dp"
-        android:background="#00BCD4"
+        android:background="@drawable/awesome_text_field"
+        android:textColor="@color/text_ueberschrift"
         android:textSize="30sp" />
 
     <Button
@@ -82,7 +85,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="250dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/awesome_toast_hilfe_button"
         android:text="@string/Buttom_Speichern" />
@@ -94,6 +97,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/ergebnis"
         android:textAlignment="center"
+        android:textColor="@color/text_ueberschrift"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -104,9 +108,9 @@
         android:layout_below="@id/speichern"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="-50dp"
-        android:layout_marginEnd="250dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/awesome_toast_hilfe_button"
         android:text="@string/n_rechung" />
 

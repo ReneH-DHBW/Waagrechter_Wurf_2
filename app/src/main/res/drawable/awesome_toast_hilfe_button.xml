@@ -11,7 +11,7 @@
                 android:bottomRightRadius="6dp"
                 android:radius="3dp" />
             <solid
-                android:color="@color/colorButton"/>
+                android:color="@color/black_red"/>
         </shape>
     </item>
 </selector>

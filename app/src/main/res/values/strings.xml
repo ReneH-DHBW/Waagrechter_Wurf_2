@@ -23,4 +23,6 @@
         Mit dieser App können Sie die Weite eines waagrechten Wurfes berechnen.\nAls Eingabe wird die Höhe in Meter und die Wurf-Beschleunigung in Meter pro Sekunde (m/s) genutzt.\nDie Wurf-Beschleunigung eines Erwachsenen liegt im Bereich von 20 m/s (70 km/h) bis 35 m/s (126 km/h).\nSportler wie ein Pitcher beim Baseball oder ein Speerwerfer schaffen Beschleuningunswerte um die 42 m/s (150 km/h).\n\nDie Endformel lautet: Beschleunigung * Quadratwurzel((2 * Höhe) / Gravitation). Sie besteht aus den beiden Formeln:\nDie Gravitation auf der Erde beträgt 9,81 m/s.\nDas Ergebnis ist die Weite in Meter.Bei der Berechnung wird der Luftwiderstand der Masse die geworfen wird vernachlässigt.\nDer Zulässige Wertebereich bei der Parametereingabe sind Zahlen größer gleich 0.
     </string>
 
+    <string name="content">Mülleimer</string>
+
 </resources>

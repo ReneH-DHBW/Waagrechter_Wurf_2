@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rechts_background"
+    android:background="@drawable/rechts"
     tools:context=".Activity3_Hilfe">
 
     <TextView
@@ -14,6 +14,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/Button_Hilfe"
         android:textAlignment="center"
+        android:textColor="@color/text_ueberschrift"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -51,12 +52,13 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="125dp"
         android:layout_marginEnd="20dp"
+        android:background="@drawable/awesome_text_field"
         android:freezesText="false"
         android:text="@string/hilfe_seite_text"
         android:textAlignment="textStart"
         android:textAllCaps="false"
-        android:background="@drawable/awesome_text_field"/>
+        android:textColor="@color/text_ueberschrift" />
 
 </RelativeLayout>
