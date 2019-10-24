@@ -10,9 +10,9 @@
     <string name="Button_Zurück_zu_Start">Zum Start</string>
     <string name="Button_Zu_der_Tabelle">Zur Tabelle</string>
     <string name="Buttom_Speichern">Speichern</string>
-    <string name="willkomensText">Eine App zur Berechnung der Weite des waagrechten Wurfes</string>
+    <string name="willkomensText">Hilf dem Weihnachtsmann den Kamin zu treffen!</string>
     <string name="kommentar">Kommentar</string>
-    <string name="ergebnis">Ihr Ergebnis</string>
+    <string name="ergebnis">Treffer!</string>
 
     <string name="hilfe_v">Hier geben Sie Ihre Wurf-Beschleunigung ein. Die Wurfstärke eines Erwachsenen liegt im Bereich von 20 m/s (70 km/h) bis 35 m/s (126 km/h).</string>
     <string name="hilfe_h">Hier geben Sie die Höhe ein von der Sie werfen.</string>
@@ -20,7 +20,7 @@
     <string name="n_rechung">Neue Rechnung</string>
 
     <string name="hilfe_seite_text">
-        Mit dieser App können Sie die Weite eines waagrechten Wurfes berechnen.\nAls Eingabe wird die Höhe in Meter und die Wurf-Beschleunigung in Meter pro Sekunde (m/s) genutzt.\nDie Wurf-Beschleunigung eines Erwachsenen liegt im Bereich von 20 m/s (70 km/h) bis 35 m/s (126 km/h).\nSportler wie ein Pitcher beim Baseball oder ein Speerwerfer schaffen Beschleuningunswerte um die 42 m/s (150 km/h).\n\nDie Endformel lautet: Beschleunigung * Quadratwurzel((2 * Höhe) / Gravitation). Sie besteht aus den beiden Formeln:\nDie Gravitation auf der Erde beträgt 9,81 m/s.\nDas Ergebnis ist die Weite in Meter.Bei der Berechnung wird der Luftwiderstand der Masse die geworfen wird vernachlässigt.\nDer Zulässige Wertebereich bei der Parametereingabe sind Zahlen größer gleich 0.
+        Mit dieser App können Sie die Weite eines waagrechten Wurfes berechnen.\n\nAls Eingabe wird die Höhe in Meter und die Wurf-Beschleunigung in Meter pro Sekunde (m/s) genutzt.\nDie Beschleunigung des Weihnachtsmannes (bzw. seiner Rentiere liegt bei ca. 20 m/s (70 km/h). Dabei kann Santa natürlich auch noch selbst werfen!\nSportler wie ein Pitcher beim Baseball oder ein Speerwerfer schaffen Beschleuningunswerte um die 42 m/s (150 km/h).\n\nDie Endformel lautet: Beschleunigung * Quadratwurzel((2 * Höhe) / Gravitation).\n\nDabei beträgt die Gravitation auf der Erde 9,81 m/s.\nDas Ergebnis ist die Weite in Meter. Bei der Berechnung wird der Luftwiderstand und somit auch die Masse vernachlässigt.\nDer Zulässige Wertebereich bei der Parametereingabe sind Zahlen größer 0.
     </string>
 
     <string name="content">Mülleimer</string>
