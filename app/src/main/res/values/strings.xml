@@ -5,17 +5,17 @@
     <string name="EditText_hohe_eingeben">Höhe eingeben (m)</string>
     <string name="EdiText_eingegebene_Beschleunigung">Beschleunigung (m/s)</string>
     <string name="Button_Hilfe">Hilfe Seite</string>
-    <string name="Button_Hilfe_V">Hilfe</string>
-    <string name="Button_Hilfe_H">Hilfe</string>
+    <string name="Button_Hilfe_V">\?</string>
+    <string name="Button_Hilfe_H">\?</string>
     <string name="Button_Zurück_zu_Start">Zum Start</string>
     <string name="Button_Zu_der_Tabelle">Zur Tabelle</string>
     <string name="Buttom_Speichern">Speichern</string>
     <string name="willkomensText">Hilf dem Weihnachtsmann den Kamin zu treffen!</string>
     <string name="kommentar">Kommentar</string>
-    <string name="ergebnis">Treffer!</string>
+    <string name="ergebnis">Abwurf bei: </string>
 
-    <string name="hilfe_v">Hier geben Sie Ihre Wurf-Beschleunigung ein. Die Wurfstärke eines Erwachsenen liegt im Bereich von 20 m/s (70 km/h) bis 35 m/s (126 km/h).</string>
-    <string name="hilfe_h">Hier geben Sie die Höhe ein von der Sie werfen.</string>
+    <string name="hilfe_v">Hier geben Sie die Geschwindigekeit des Schlittens ein!\nEin Rentier schafft in etwa 20 m/s (70 km/h).</string>
+    <string name="hilfe_h">Hier geben Sie die Flughöhe des Schlittens ein.</string>
 
     <string name="n_rechung">Neue Rechnung</string>
 

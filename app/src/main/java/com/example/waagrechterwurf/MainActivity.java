@@ -26,6 +26,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     protected Button hilfe_h;
     protected Button button;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -107,6 +108,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
             String hoeheString = eingegebene_hoehe.getText().toString().trim();
             String beschlString = eingegebene_beschleunigung.getText().toString().trim();
             weite_wird_berechnet.setEnabled(!hoeheString.isEmpty()&&!beschlString.isEmpty());
+            if (!hoeheString.isEmpty()&&!beschlString.isEmpty()){
+            weite_wird_berechnet.setAlpha(1);}
+            else
+                weite_wird_berechnet.setAlpha((float) 0.5);
+
         }
         @Override
         public void afterTextChanged(Editable editable) {

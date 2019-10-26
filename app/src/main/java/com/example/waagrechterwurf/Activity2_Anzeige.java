@@ -98,7 +98,7 @@ public class Activity2_Anzeige extends Activity {
         kommentar = intent.getStringExtra("wert_k");
 
 
-       zumSpeichern = "Höhe: "+ wertHoeheVA1_String+"m" + " Beschl. : "+wertVVA1_String+"m/s "+"\n Weite : "+weiteString +"\n Kommentar: "+kommentar+"\n Speicherzeit: "+zeit;
+        zumSpeichern = "Höhe: "+ wertHoeheVA1_String+"m" + " Beschl. : "+wertVVA1_String+"m/s "+"\n Weite : "+weiteString +"\n Kommentar: "+kommentar+"\n Speicherzeit: "+zeit;
 
     }
 
