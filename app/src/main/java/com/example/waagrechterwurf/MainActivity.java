@@ -141,11 +141,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
 // Aktuelle Zeit finden
     public static String getCurrentTimeStamp(){
         try {
-
             SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyy HH:mm:ss");
             String aktuelleZeit = dateFormat.format(new Date());
-
             return aktuelleZeit;
+
         } catch (Exception e) {
             e.printStackTrace();
 
