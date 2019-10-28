@@ -19,7 +19,7 @@
         android:layout_marginEnd="250dp"
         android:background="@drawable/awesome_toast_hilfe_button"
         android:text="@string/Button_Hilfe"
-        android:textColor="@color/colorBlack" />
+        android:textColor="@color/text" />
 
     <Button
         android:id="@+id/weite_wird_berechnet"
@@ -35,7 +35,7 @@
         android:enabled="false"
         android:alpha="0.5"
         android:text="@string/Button_weite_wird_berechnet"
-        android:textColor="@color/colorBlack" />
+        android:textColor="@color/text" />
 
     <Button
         android:id="@+id/hilfe_button_v"
@@ -50,7 +50,7 @@
         android:alpha="0.85"
         android:background="@drawable/awesome_toast_hilfe_button"
         android:text="@string/Button_Hilfe_V"
-        android:textColor="@color/colorBlack" />
+        android:textColor="@color/text" />
 
     <Button
         android:id="@+id/hilfe_button_h"
@@ -65,7 +65,7 @@
         android:alpha="0.85"
         android:background="@drawable/awesome_toast_hilfe_button"
         android:text="@string/Button_Hilfe_H"
-        android:textColor="@color/colorBlack" />
+        android:textColor="@color/text"/>
 
     <EditText
         android:id="@+id/eingegebene_hoehe"
@@ -78,12 +78,13 @@
         android:layout_marginTop="125dp"
         android:layout_marginEnd="100dp"
         android:autofillHints="0"
+        android:digits="0,1,2,3,4,5,6,7,8,9"
         android:ems="10"
         android:hint="@string/EditText_hohe_eingeben"
         android:inputType="numberDecimal"
-        android:digits="0,1,2,3,4,5,6,7,8,9"
-        android:textAlignment="center"
-        android:textColorHint="@color/text_ueberschrift" />
+        android:textAlignment="textStart"
+        android:textColorHint="@color/text"
+        android:textColor="@color/text"/>
 
     <EditText
         android:id="@+id/eingegebene_beschleunigung"
@@ -96,12 +97,13 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="100dp"
         android:autofillHints="0"
+        android:digits="0,1,2,3,4,5,6,7,8,9"
         android:ems="10"
         android:hint="@string/EdiText_eingegebene_Beschleunigung"
         android:inputType="numberDecimal"
-        android:digits="0,1,2,3,4,5,6,7,8,9"
-        android:textAlignment="center"
-        android:textColorHint="@color/text_ueberschrift" />
+        android:textAlignment="textStart"
+        android:textColorHint="@color/text"
+        android:textColor="@color/text"/>
 
     <TextView
         android:id="@+id/willkommensSeite"
@@ -110,7 +112,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/willkomensText"
         android:textAlignment="center"
-        android:textColor="@color/text_ueberschrift"
+        android:textColor="@color/text"
         android:textColorHint="@color/colorBlack"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -125,7 +127,8 @@
         android:layout_marginTop="630dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/awesome_toast_hilfe_button"
-        android:text="@string/Button_Zu_der_Tabelle" />
+        android:text="@string/Button_Zu_der_Tabelle"
+        android:textColor="@color/text"/>
 
     <EditText
         android:id="@+id/kommentar"
@@ -141,7 +144,8 @@
         android:ems="10"
         android:hint="@string/kommentar"
         android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:textColorHint="@color/text_ueberschrift" />
+        android:textAlignment="textStart"
+        android:textColorHint="@color/text"
+        android:textColor="@color/text"/>
 
 </RelativeLayout>

@@ -14,7 +14,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/Button_Hilfe"
         android:textAlignment="center"
-        android:textColor="@color/text_ueberschrift"
+        android:textColor="@color/text"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -29,7 +29,8 @@
         android:layout_marginTop="630dp"
         android:layout_marginEnd="250dp"
         android:background="@drawable/awesome_toast_hilfe_button"
-        android:text="@string/Button_Zurück_zu_Start" />
+        android:text="@string/Button_Zurück_zu_Start"
+        android:textColor="@color/text"/>
 
     <Button
         android:id="@+id/zur_Tabelle"
@@ -42,7 +43,8 @@
         android:layout_marginTop="630dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/awesome_toast_hilfe_button"
-        android:text="@string/Button_Zu_der_Tabelle" />
+        android:text="@string/Button_Zu_der_Tabelle"
+        android:textColor="@color/text"/>
 
     <TextView
         android:id="@+id/hilfeText"

@@ -19,7 +19,7 @@
         android:layout_marginEnd="250dp"
         android:background="@drawable/awesome_toast_hilfe_button"
         android:text="@string/Button_Hilfe"
-        android:textColor="@color/colorBlack" />
+        android:textColor="@color/text" />
 
     <Button
         android:id="@+id/weiter_zur_Tabelle"
@@ -33,7 +33,7 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/awesome_toast_hilfe_button"
         android:text="@string/Button_Zu_der_Tabelle"
-        android:textColor="@color/colorBlack" />
+        android:textColor="@color/text" />
 
     <TextView
         android:id="@+id/hoehe_anzeigen"
@@ -46,7 +46,7 @@
         android:layout_marginTop="125dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/awesome_text_field"
-        android:textColor="@color/text_ueberschrift"
+        android:textColor="@color/text"
         android:textSize="30sp" />
 
     <TextView
@@ -60,7 +60,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/awesome_text_field"
-        android:textColor="@color/text_ueberschrift"
+        android:textColor="@color/text"
         android:textSize="30sp" />
 
     <TextView
@@ -74,7 +74,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/awesome_text_field"
-        android:textColor="@color/text_ueberschrift"
+        android:textColor="@color/text"
         android:textSize="30sp" />
 
     <Button
@@ -88,7 +88,8 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/awesome_toast_hilfe_button"
-        android:text="@string/Buttom_Speichern" />
+        android:text="@string/Buttom_Speichern"
+        android:textColor="@color/text"/>
 
     <TextView
         android:id="@+id/ergebnis_anzeige"
@@ -97,7 +98,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/ergebnis"
         android:textAlignment="center"
-        android:textColor="@color/text_ueberschrift"
+        android:textColor="@color/text"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -112,7 +113,8 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/awesome_toast_hilfe_button"
-        android:text="@string/n_rechung" />
+        android:text="@string/n_rechung"
+        android:textColor="@color/text"/>
 
 
 </RelativeLayout>
