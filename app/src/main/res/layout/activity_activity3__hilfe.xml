@@ -28,7 +28,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="630dp"
         android:layout_marginEnd="250dp"
-        android:background="@drawable/awesome_toast_hilfe_button"
+        android:background="@drawable/awesome_button"
         android:text="@string/Button_Zurück_zu_Start"
         android:textColor="@color/text"/>
 
@@ -42,7 +42,7 @@
         android:layout_marginStart="250dp"
         android:layout_marginTop="630dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/awesome_toast_hilfe_button"
+        android:background="@drawable/awesome_button"
         android:text="@string/Button_Zu_der_Tabelle"
         android:textColor="@color/text"/>
 

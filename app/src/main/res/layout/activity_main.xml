@@ -17,7 +17,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="630dp"
         android:layout_marginEnd="250dp"
-        android:background="@drawable/awesome_toast_hilfe_button"
+        android:background="@drawable/awesome_button"
         android:text="@string/Button_Hilfe"
         android:textColor="@color/text" />
 
@@ -31,7 +31,7 @@
         android:layout_marginStart="135dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="135dp"
-        android:background="@drawable/awesome_toast_hilfe_button"
+        android:background="@drawable/awesome_button"
         android:enabled="false"
         android:alpha="0.5"
         android:text="@string/Button_weite_wird_berechnet"
@@ -39,33 +39,37 @@
 
     <Button
         android:id="@+id/hilfe_button_v"
-        android:layout_width="58dp"
+        android:layout_width="49dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/eingegebene_hoehe"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="320dp"
+        android:layout_marginStart="324dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
         android:alpha="0.85"
-        android:background="@drawable/awesome_toast_hilfe_button"
+        android:background="@drawable/round_button"
         android:text="@string/Button_Hilfe_V"
-        android:textColor="@color/text" />
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/hilfe_button_h"
-        android:layout_width="wrap_content"
+        android:layout_width="49dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="320dp"
+        android:layout_marginStart="324dp"
         android:layout_marginTop="125dp"
         android:layout_marginEnd="20dp"
         android:alpha="0.85"
-        android:background="@drawable/awesome_toast_hilfe_button"
+        android:background="@drawable/round_button"
         android:text="@string/Button_Hilfe_H"
-        android:textColor="@color/text"/>
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/eingegebene_hoehe"
@@ -126,7 +130,7 @@
         android:layout_marginStart="250dp"
         android:layout_marginTop="630dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/awesome_toast_hilfe_button"
+        android:background="@drawable/awesome_button"
         android:text="@string/Button_Zu_der_Tabelle"
         android:textColor="@color/text"/>
 

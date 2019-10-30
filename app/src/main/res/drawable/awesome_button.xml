@@ -14,4 +14,19 @@
                 android:color="@color/black_red"/>
         </shape>
     </item>
+    <item
+        android:state_pressed="true">
+        <shape
+            android:shape="rectangle">
+            <corners
+                android:bottomLeftRadius="6dp"
+                android:topLeftRadius="6dp"
+                android:topRightRadius="6dp"
+                android:bottomRightRadius="6dp"
+                android:radius="3dp" />
+            <solid
+                android:color="@color/button_rand"/>
+        </shape>
+    </item>
+
 </selector>
