@@ -9,6 +9,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -62,11 +63,23 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.weite_wird_berechnet:
                 Intent intent = new Intent(this, Activity2_Anzeige.class);
 // gebe die Hoehe weiter
-                Double wertHoehe = Double.parseDouble(eingegebene_hoehe.getText().toString());
-                intent.putExtra("wert_hoehe", wertHoehe);
+                try {
+                    Double wertHoehe = Double.parseDouble(eingegebene_hoehe.getText().toString());
+                    intent.putExtra("wert_hoehe", wertHoehe);
+                } catch (NumberFormatException e){
+                    Toast toast = Toast.makeText(this, R.string.toast, Toast.LENGTH_LONG);
+                    toast.show();
+                    return;
+                }
 // gebe die Geschwindigkeit weiter
-                Double wertV = Double.parseDouble(eingegebene_beschleunigung.getText().toString());
-                intent.putExtra("wert_v", wertV);
+                try {
+                    Double wertV = Double.parseDouble(eingegebene_beschleunigung.getText().toString());
+                    intent.putExtra("wert_v", wertV);
+                } catch (NumberFormatException e){
+                    Toast toast = Toast.makeText(this, R.string.toast, Toast.LENGTH_LONG);
+                    toast.show();
+                    return;
+                }
 // Kommentar
                 String wertComment = comment.getText().toString();
                 intent.putExtra("wert_k", wertComment);

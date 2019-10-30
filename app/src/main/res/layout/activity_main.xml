@@ -71,56 +71,6 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/eingegebene_hoehe"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="125dp"
-        android:layout_marginEnd="100dp"
-        android:autofillHints="0"
-        android:digits="0123456789"
-        android:ems="10"
-        android:hint="@string/EditText_hohe_eingeben"
-        android:inputType="numberDecimal"
-        android:textAlignment="textStart"
-        android:textColorHint="@color/text"
-        android:textColor="@color/text"/>
-
-    <EditText
-        android:id="@+id/eingegebene_beschleunigung"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/eingegebene_hoehe"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="100dp"
-        android:autofillHints="0"
-        android:digits="0123456789"
-        android:ems="10"
-        android:hint="@string/EdiText_eingegebene_Beschleunigung"
-        android:inputType="numberDecimal"
-        android:textAlignment="textStart"
-        android:textColorHint="@color/text"
-        android:textColor="@color/text"/>
-
-    <TextView
-        android:id="@+id/willkommensSeite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="@string/willkomensText"
-        android:textAlignment="center"
-        android:textColor="@color/text"
-        android:textColorHint="@color/colorBlack"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
     <Button
         android:id="@+id/zurTabelle"
         android:layout_width="wrap_content"
@@ -133,6 +83,44 @@
         android:background="@drawable/awesome_button"
         android:text="@string/Button_Zu_der_Tabelle"
         android:textColor="@color/text"/>
+
+    <EditText
+        android:id="@+id/eingegebene_hoehe"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="100dp"
+        android:autofillHints="0"
+        android:ems="10"
+        android:hint="@string/EditText_hohe_eingeben"
+        android:inputType="numberDecimal"
+        android:textAlignment="textStart"
+        android:textColorHint="@color/text"
+        android:textColor="@color/text"
+        android:maxLength="6"/>
+
+    <EditText
+        android:id="@+id/eingegebene_beschleunigung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eingegebene_hoehe"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:autofillHints="0"
+        android:ems="10"
+        android:hint="@string/EdiText_eingegebene_Beschleunigung"
+        android:inputType="numberDecimal"
+        android:textAlignment="textStart"
+        android:textColorHint="@color/text"
+        android:textColor="@color/text"
+        android:maxLength="6"/>
 
     <EditText
         android:id="@+id/kommentar"
@@ -150,6 +138,19 @@
         android:inputType="textPersonName"
         android:textAlignment="textStart"
         android:textColorHint="@color/text"
-        android:textColor="@color/text"/>
+        android:textColor="@color/text"
+        android:maxLength="30"/>
+
+    <TextView
+        android:id="@+id/willkommensSeite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/willkomensText"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textColorHint="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

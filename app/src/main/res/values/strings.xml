@@ -24,5 +24,6 @@
     </string>
 
     <string name="content">Mülleimer</string>
+    <string name="toast">Falsche Eingabe. Bitte geben Sie einen gültigen Wert ein.</string>
 
 </resources>
