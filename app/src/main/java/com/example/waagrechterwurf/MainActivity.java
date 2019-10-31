@@ -67,8 +67,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     Double wertHoehe = Double.parseDouble(eingegebene_hoehe.getText().toString());
                     intent.putExtra("wert_hoehe", wertHoehe);
                 } catch (NumberFormatException e){
-                    Toast toast = Toast.makeText(this, R.string.toast, Toast.LENGTH_LONG);
-                    toast.show();
+                    eventHandlerFuerHilfeButton();
                     return;
                 }
 // gebe die Geschwindigkeit weiter
@@ -76,8 +75,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     Double wertV = Double.parseDouble(eingegebene_beschleunigung.getText().toString());
                     intent.putExtra("wert_v", wertV);
                 } catch (NumberFormatException e){
-                    Toast toast = Toast.makeText(this, R.string.toast, Toast.LENGTH_LONG);
-                    toast.show();
+                    eventHandlerFuerHilfeButton();
                     return;
                 }
 // Kommentar
@@ -146,6 +144,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
     protected void eventHandlerFuerButtonH(){
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         dialogBuilder.setMessage(R.string.hilfe_h);
+        dialogBuilder.setPositiveButton("Okay", null);
+
+        AlertDialog dialog = dialogBuilder.create();
+        dialog.show();
+    }
+    protected void eventHandlerFuerHilfeButton(){
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+        dialogBuilder.setMessage(R.string.falsch_Eingabe);
         dialogBuilder.setPositiveButton("Okay", null);
 
         AlertDialog dialog = dialogBuilder.create();
