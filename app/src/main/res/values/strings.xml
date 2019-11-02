@@ -14,16 +14,16 @@
     <string name="kommentar">Kommentar</string>
     <string name="ergebnis">Abwurf bei: </string>
 
-    <string name="hilfe_v">Hier geben Sie die Geschwindigekeit des Schlittens ein!\nEin Rentier schafft in etwa 20 m/s (70 km/h).</string>
+    <string name="hilfe_v">Hier geben Sie die Geschwindigkeit des Schlittens ein!\nEin Rentier schafft in etwa 20 m/s (70 km/h).</string>
     <string name="hilfe_h">Hier geben Sie die Flughöhe des Schlittens ein.</string>
 
     <string name="n_rechung">Neue Rechnung</string>
 
     <string name="hilfe_seite_text">
-        Mit dieser App können Sie die Weite eines waagrechten Wurfes berechnen.\n\nAls Eingabe wird die Höhe in Meter und die Wurf-Beschleunigung in Meter pro Sekunde (m/s) genutzt.\nDie Beschleunigung des Weihnachtsmannes (bzw. seiner Rentiere liegt bei ca. 20 m/s (70 km/h). Dabei kann Santa natürlich auch noch selbst werfen!\nSportler wie ein Pitcher beim Baseball oder ein Speerwerfer schaffen Beschleuningunswerte um die 42 m/s (150 km/h).\n\nDie Endformel lautet: Beschleunigung * Quadratwurzel((2 * Höhe) / Gravitation).\n\nDabei beträgt die Gravitation auf der Erde 9,81 m/s.\nDas Ergebnis ist die Weite in Meter. Bei der Berechnung wird der Luftwiderstand und somit auch die Masse vernachlässigt.\nDer Zulässige Wertebereich bei der Parametereingabe sind Zahlen größer 0.
+        Mit dieser App können Sie die Weite eines waagrechten Wurfes berechnen.\n\nAls Eingabe wird die Höhe in Meter und die Wurf-Beschleunigung in Meter pro Sekunde (m/s) genutzt.\nDie Beschleunigung des Weihnachtsmannes (bzw. seiner Rentiere liegt bei ca. 20 m/s (70 km/h). Dabei kann Santa natürlich auch noch selbst werfen!\nSportler wie ein Pitcher beim Baseball oder ein Speerwerfer schaffen Beschleuningunswerte um die 42 m/s (150 km/h).\n\nDie Endformel lautet: Beschleunigung * Quadratwurzel((2 * Höhe) / Gravitation).\n\nDabei beträgt die Gravitation auf der Erde 9,81 m/s.\nDas Ergebnis ist die Weite in Meter. Bei der Berechnung wird der Luftwiderstand und somit auch die Masse vernachlässigt.\nDer Zulässige Wertebereich bei der Parametereingabe sind Zahlen von 0 bis 999999
     </string>
 
     <string name="content">Mülleimer</string>
-    <string name="falsch_Eingabe">Dies ist leider eine Falsche Eingabe.\nSie müssen mehr als nur einen Punkt eingeben.</string>
+    <string name="falsch_Eingabe">Dies ist leider eine falsche Eingabe.\nSie müssen mehr als nur einen Punkt eingeben.</string>
 
 </resources>
