@@ -1,21 +1,16 @@
 package com.example.waagrechterwurf;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class Activity2_Anzeige extends Activity {
-// TextViews draußen deklarieren
+
     protected TextView textViewHoehe = null;
     protected TextView textViewV = null;
     protected TextView textViewErgebnis = null;
@@ -44,26 +39,25 @@ public class Activity2_Anzeige extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity2__anzeige);
 
-//dao initialisieren
+        //dao initialisieren
         dao = WertRoomDatabase.getDatabase(this).wertDao();
 
-//Werte der TextViews in Variablen übergeben
         textViewHoehe = findViewById(R.id.hoehe_anzeigen);
         textViewV = findViewById(R.id.v_anzeigen);
         textViewErgebnis = findViewById(R.id.ergebnis_anzeigen);
 
-//Button um zur Hilfe-Seite zu kommen
+        //Button um zur Hilfe-Seite zu kommen
         zur_hilfe_seite = findViewById(R.id.zur_hilfe_seite);
         zur_hilfe_seite.setOnClickListener(view ->{
             Intent intent = new Intent(this, Activity3_Hilfe.class);
             startActivity(intent);
                 });
 
-//Button um die Werte zu speichern
+        //Button um die Werte zu speichern
         speichern = findViewById(R.id.speichern);
         speichern.setOnClickListener((view)-> saveWertOnClick());
 
-//Button um zur Tabelle zu kommen
+        //Button um zur Tabelle zu kommen
         weiter_zur_tabelle = findViewById(R.id.weiter_zur_Tabelle);
         weiter_zur_tabelle.setOnClickListener((view)->{
             Intent intent = new Intent(this, Activity4_Tabelle.class);
@@ -71,7 +65,7 @@ public class Activity2_Anzeige extends Activity {
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         });
 
-// Button für eine neue Rechnung
+        // Button für eine neue Rechnung
         neue_rechnung = findViewById(R.id.n_rechnung);
         neue_rechnung.setOnClickListener(view -> {
             Intent intent = new Intent(this, MainActivity.class);
@@ -79,7 +73,7 @@ public class Activity2_Anzeige extends Activity {
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
         });
 
-//Darstellung der Zahlen auf die TextViews aus dem erstellten Intent von der vorherigen Seite + schreiben der Werte in einen String
+        //Werte aus dem Intent abgreifen und darstellen
         Intent intent = getIntent();
 
         wertHoeheVA1 = intent.getDoubleExtra("wert_hoehe", 0);
@@ -119,7 +113,7 @@ public class Activity2_Anzeige extends Activity {
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
-//Methode zum speichern der Werte, welche zuletzt auf der Main eingegeben wurden (als EIN String)
+    //Methode zum speichern der Werte, welche zuletzt auf der Main eingegeben wurden
     private void saveWertOnClick(){
         if (!zumSpeichern.isEmpty()){
             new SpeichernTask().execute(new Wert(zumSpeichern));

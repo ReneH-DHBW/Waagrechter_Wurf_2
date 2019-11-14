@@ -21,16 +21,16 @@ public class Activity3_Hilfe extends AppCompatActivity implements View.OnClickLi
         zur_Tabelle.setOnClickListener(this);
     }
 
-// Buttons zur Navigation
+    // Buttons zur Navigation
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-// Zur start Seite
+            // Zur Start Seite
             case R.id.zur_Startseite:
                 Intent intentStart = new Intent(this, MainActivity.class);
                 startActivity(intentStart);
                 break;
-// Zur Tabellen Seite
+            // Zur Tabellen Seite
             case R.id.zur_Tabelle:
                 Intent intentTabelle = new Intent(this, Activity4_Tabelle.class);
                 startActivity(intentTabelle);
